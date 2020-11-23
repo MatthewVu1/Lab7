@@ -1,0 +1,46 @@
+body {
+    background-color: beige;
+  }
+nav{
+    background-color: lightblue;
+    text-align: center;
+}
+ul.nav li{
+    display: inline;
+}
+h1{
+    font-family: Montserrat, sans-serif;;
+}
+#l1::after{
+    content: "\a";
+    white-space: pre;
+}
+
+ul > hr{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+div.course{
+    display: grid;
+    grid-template-columns: 500px 3fr;
+}
+
+div.class_desc{
+    float: left;
+}
+
+
+@media only screen and (max-width: 600px){
+    div.course_desc{
+       grid-row: 2;
+    }
+    ul.nav li{
+        display: block;
+    }
+}
